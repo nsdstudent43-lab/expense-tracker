@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTrack Expense Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Expense Tracker</h2>
+        
+        <div class="balance-container">
+            <h4>Total Spent:</h4>
+            <h1 id="total-amount">$0.00</h1>
+        </div>
+
+        <form id="expense-form">
+            <input type="text" id="name" placeholder="What did you buy?" required>
+            <input type="number" id="amount" placeholder="Amount" step="0.01" required>
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <ul id="expense-list">
+            </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
